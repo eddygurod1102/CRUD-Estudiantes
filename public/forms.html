@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <a href="./buscar.html">Buscar alumnos</a>
+    </header>
+
+    <!--Enviar datos a la base de datos (form regular)-->
+    <h2>Form para enviar datos de forma regular</h2>
+
+    <form action="http://localhost:8080/students" method="post">
+        <label for="first">Nombre</label><br>
+        <input type="text" name="first"><br><br>
+        <label for="last">Apellido</label><br>
+        <input type="text" name="last"><br><br>
+        <label for="student_id">ID</label><br>
+        <input type="text" name="student_id"><br><br>
+        <label for="carreer">Carrera</label><br>
+        <input type="text" name="carreer">
+        <input type="submit" value="Registrar alumno">
+    </form>
+
+    <h2>Form para enviar datos usando fetch()</h2>
+    <form>
+        <label for="first">Nombre</label><br>
+        <input type="text" name="first" id="first"><br><br>
+        <label for="last">Apellido</label><br>
+        <input type="text" name="last" id="last"><br><br>
+        <label for="student_id">ID del estudiante</label><br>
+        <input type="text" name="student_id" id="student_id"><br><br>
+        <label for="carreer">Carrera</label><br>
+        <input type="text" name="carreer" id="carreer">
+    </form>
+    <button id="send">Registrar alumno</button>
+
+    <script src="./js/enviar.js"></script>
+</body>
+</html>

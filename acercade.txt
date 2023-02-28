@@ -1,0 +1,5 @@
+CRUD estudiantes
+
+V 1.0.0
+- Agrega, edita, elimina y muestra la información de los estudiantes.
+- Aún no está optimizado para dispositivos móviles.

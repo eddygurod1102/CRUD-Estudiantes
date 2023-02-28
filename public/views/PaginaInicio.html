@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/PaginaInicio.css">
+        <title>P&aacute;gina de inicio</title>
+    </head>
+    <body>
+        <div id="container">
+            <table id="tabla">
+                <thead id="tabla__cabecera">
+                    <tr>
+                        <th id="tabla__cabecera__nombre">Nombre</th>
+                        <th id="tabla__cabecera__apellido">Apellido</th>
+                        <th id="tabla__cabecera__matricula">Matrícula</th>
+                        <th id="tabla__cabecera__carrera">Carrera</th>
+                        <th id="tabla__cabereca__botones" colspan="2"></th>
+                    </tr>
+                </thead>
+                <script src="../js/obtenerEstudiantes.js" type="module"></script>
+                <tbody id="tabla__contenido">
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <div id="ventana">
+
+        </div>
+        <div id="contenedor_modificar">
+            <form>
+                <p>Nombre</p>
+                    <input type="text" placeholder="Inserte un solo nombre" id="first" autocomplete="off">
+                    <br><br>
+                    <p>Apellido</p>
+                    <input type="text" placeholder="Inserte un solo apellido" id="last" autocomplete="off">
+                    <br><br>
+                    <p>Matrícula</p>
+                    <input type="text" placeholder="Inserte la matrícula" id="student_id" autocomplete="off">
+                    <br><br>
+                    <p>Carrera</p>
+                    <input type="text" placeholder="Inserte la carrera" id="carreer" autocomplete="off">
+            </form>
+
+            <div id="contenedor_modificar__botones">
+                <button id="contenedor_modificar__botones__modificar">Modificar alumno</button>
+                <button id="contenedor_modificar__botones__cancelar">Cancelar</button>
+            </div>
+        </div>
+    </body>
+    <script src="../js/actualizarEstudiante.js" type="module"></script>
+</html>

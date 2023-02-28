@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    /*background-color: #0C1;*/
+    width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#container2 {
+    width: 295px;
+    display: flex;
+    flex-direction: column;
+}
+
+#container2 > form {
+    margin-top: 15px;
+    font-family: sans-serif;
+}
+
+#agregarAlumno {
+    /* margin: auto; */
+    font-size: 14px;
+    padding: 5px 1px;
+    margin: 15px 80px;
+    border: 1px solid #888888;
+}
+
+p {
+    font-size: 18px;
+    /*margin-top: 20px;*/
+}
+
+input[type="text"] {
+    width: 295px;
+    height: 25px;
+    border: 0px;
+    border-bottom: 2px solid #0C40C9;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+#agregarAlumno:hover {
+    background-color: #888888;
+    color: #ffffff;
+}

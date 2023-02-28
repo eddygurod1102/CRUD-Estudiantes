@@ -1,0 +1,35 @@
+REQUISITOS ANTES DE EJECUTAR LA APLICACION WEB
+-npm.
+-MongoDB.
+
+INSTALACION
+1. Dirigirse a la carpeta del proyecto, y dentro de esta, ejecutar el siguiente comando:
+	npm init
+
+2. Instalar los paquetes de node:
+	nodemon (opcional).
+	morgan.
+	cors.
+	express.
+	mongodb.
+
+Para instalarlos, utilizar el comando
+	npm install <nombre_del_paquete> --save
+
+3. Si decidiste instalar nodemon, dirigete al archivo package.json, dentro de este, agrega un script dentro del JSON script de la 
+siguiente manera
+	"nombre_script": "nodemon server.js"
+
+(NOTA: El nombre del script puede ser el de tu elección).
+
+Caso contrario, omite este paso.
+
+4. Si hiciste el paso anterior, ejecutar el siguiente comando dentro del directiorio de la aplicación:
+	npm run nombre_script
+
+(NOTA: reemplaza nombre_script por el nombre que decidiste ponerle al comando).
+
+Caso contrario, ejecuta:
+	node server.js
+
+5. Prueba la aplicación;).

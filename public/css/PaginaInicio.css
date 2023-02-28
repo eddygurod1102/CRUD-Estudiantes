@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 900px;
+    margin: 10px auto;
+}
+
+table, th, td {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+
+th {
+    font-family: sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 22px;
+}
+
+td {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: #F7900E;
+}
+
+td.modificar, td.eliminar {
+    color: #FFFFFF;
+}
+
+td.modificar {
+    background-color: blue;
+    cursor: pointer;
+}
+
+td.eliminar {
+    background-color: #ED1B1B;
+    cursor: pointer;
+}
+
+#tabla__cabecera__nombre {
+    width: 93.453px;
+}
+
+#tabla__cabecera__apellido {
+    width: 97.563px;
+}
+
+#tabla__cabecera__matricula {
+    width: 108.578px;
+}
+
+#tabla__cabecera__carrera {
+    width: 409.828px;
+}
+
+#tabla__cabecera__botones {
+    width: 184.574px;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/*Estilización del panel emergente para modificar la información del alumno.*/
+#contenedor_modificar {
+    width: 295px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 50px;
+    right: 39%;
+    display: none;
+    flex-direction: column;
+}
+
+#contenedor_modificar > form {
+    margin-top: 15px;
+    font-family: sans-serif;
+}
+
+#contenedor_modificar__botones {
+    display: flex;
+    justify-content: center;
+}
+
+#contenedor_modificar__botones__modificar,
+#contenedor_modificar__botones__cancelar {
+    margin: 10px 2px;
+    font-size: 14px;
+    padding: 5px 3px;
+    border: 1px solid #888888;
+}
+
+#contenedor_modificar__botones__cancelar {
+    width: 114.61px;
+}
+
+#contenedor_modificar__botones__modificar:hover,
+#contenedor_modificar__botones__cancelar:hover {
+    background-color: #888888;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#contenedor_modificar p {
+    font-size: 18px;
+}
+
+#contenedor_modificar input[type="text"] {
+    width: 295px;
+    height: 25px;
+    border: 0px;
+    border-bottom: 2px solid #0C40C9;
+}
+
+#contenedor_modificar input[type="text"]:focus {
+    outline: none;
+}
+
+#ventana {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
